@@ -49,6 +49,11 @@ initial
 //// count1=0;
 // a=0;
  end
+ initial
+  begin
+   $dumpfile("tlc_out.vcd");
+   $dumpvars(0, iiitb_tlc_tb);
+  end
  // 9. Generating Test Vectors
 initial
  begin
