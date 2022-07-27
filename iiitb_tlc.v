@@ -88,7 +88,7 @@ module iiitb_tlc(light_highway, light_farm, C, clk, rst_n);
 				default: next_state = HGRE_FRED;
 			endcase
 		end
-// fpga4student.com FPGA projects, VHDL projects, Verilog projects
+
 // create red and yellow delay counts
 	always @(posedge clk)
 		begin
