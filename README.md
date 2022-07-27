@@ -18,4 +18,4 @@ There are four cases in this controller circuit:
  
 The block diagram of the traffic light controller is shown in the figure above.
 
-#PRE-LAYOUT SIMULATION
+# PRE-LAYOUT SIMULATION
