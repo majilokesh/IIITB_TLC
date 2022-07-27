@@ -21,25 +21,25 @@
 // Additional Comments:
 // 
 ////////////////////////////////////////////////////////////////////////////////
-// 2. Preprocessor Directives
+// 1. Preprocessor Directives
 `define DELAY 1
-// 3. Include Statements
+// 2. Include Statements
 //`include "counter_define.h"
 module iiitb_tlc_tb;
-// 4. Parameter definitions
-parameter ENDTIME  = 400000;
-// 5. DUT Input regs
+// 3. Parameter definitions
+parameter ENDTIME  = 40000;
+// 4. DUT Input regs
 //integer count, count1, a;
 reg clk;
 reg rst_n;
 reg sensor;
 wire [2:0] light_farm;
-// 6. DUT Output wires
+// 5. DUT Output wires
 wire [2:0] light_highway;
-// 7. DUT Instantiation
-iiitb_tlc tb(light_highway, light_farm, sensor, clk, rst_n);
+// 6. DUT Instantiation
+iiitb_tlc test(light_highway, light_farm, sensor, clk, rst_n);
 
-// 8. Initial Conditions
+// 7. Initial Conditions
 initial
  begin
  clk = 1'b0;
@@ -54,7 +54,7 @@ initial
    $dumpfile("tlc_out.vcd");
    $dumpvars(0, iiitb_tlc_tb);
   end
- // 9. Generating Test Vectors
+ // 8. Generating Test Vectors
 initial
  begin
  main;
@@ -92,7 +92,7 @@ task operation_flow;
  sensor = 1;
  end
 endtask
-// 10. Debug output
+// 9. Debug output
 task debug_output;
  begin
  $display("----------------------------------------------");
@@ -104,7 +104,7 @@ task debug_output;
  $monitor("TIME = %d, reset = %b, sensor = %b, light of highway = %h, light of farm road = %h",$time,rst_n ,sensor,light_highway,light_farm );
  end
 endtask
-//12. Determines the simulation limit
+//10. Determines the simulation limit
 task endsimulation;
  begin
  #ENDTIME
