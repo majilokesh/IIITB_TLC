@@ -15,6 +15,7 @@ There are four cases in this controller circuit:
 
 # BLOCK DIAGRAM
  ![image](https://user-images.githubusercontent.com/72696170/181302041-489c49ad-2ba5-4083-ac92-8a216c5a46e1.png)
+ 
 The block diagram of the traffic light controller is shown in the figure above.
 
 #PRE-LAYOUT SIMULATION
