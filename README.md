@@ -21,26 +21,20 @@ GTKWave is a VCD waveform viewer based on the GTK library. This viewer support V
 **Installing iverilog and GTKWave in Ubuntu**
 
 Open your terminal and type the following commands:
-
+```
 $ sudo apt get iverilog
-
 $ sudo apt get install iverilog gtkwave
-
+```
 
 **To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal**
-
+```
 $   sudo apt install -y git
-
 $   git clone https://github.com/majilokesh/iiitb_tlc.git
-
 $   cd iiitb_tlc
-
 $   iverilog iiitb_tlc.v iiitb_tlc_tb.v
-
 $   ./a.out
-
 $   gtkwave tlc_out.vcd
-
+```
 # BLOCK DIAGRAM
  ![image](https://user-images.githubusercontent.com/72696170/181302041-489c49ad-2ba5-4083-ac92-8a216c5a46e1.png)
  
