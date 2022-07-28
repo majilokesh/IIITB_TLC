@@ -26,11 +26,12 @@ $ sudo apt get iverilog
 
 $ sudo apt get install iverilog gtkwave
 
-To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+
+**To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal**
 
 $   sudo apt install -y git
 
-$   git clone https://github.com/sanampudig/iiitb_pwm_gen
+$   git clone https://github.com/majilokesh/iiitb_tlc.git
 
 $   cd iiitb_tlc
 
