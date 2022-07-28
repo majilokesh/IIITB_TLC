@@ -13,6 +13,11 @@ There are four cases in this controller circuit:
 3. Red on highway and green on farm way
 4. Red on highway and yellow on farm way
 
+# About iverilog and GTKWave
+Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the ``vvp'' command. For synthesis, the compiler generates netlists in the desired format. The compiler proper is intended to parse and elaborate design descriptions written to the IEEE standard IEEE Std 1364-2005.
+
+GTKWave is a VCD waveform viewer based on the GTK library. This viewer support VCD and LXT formats for signal dumps. Waveform dumps are written by the Icarus Verilog runtime program vvp. The user uses $dumpfile and $dumpvars system tasks to enable waveform dumping, then the vvp runtime takes care of the rest. The output is written into the file specified by the $dumpfile system task. If the $dumpfile call is absent, the compiler will choose the file name dump.vcd or dump.lxt, depending on runtime flags.
+
 # BLOCK DIAGRAM
  ![image](https://user-images.githubusercontent.com/72696170/181302041-489c49ad-2ba5-4083-ac92-8a216c5a46e1.png)
  
@@ -20,3 +25,9 @@ The block diagram of the traffic light controller is shown in the figure above.
 
 # PRE-LAYOUT SIMULATION
  ![image](https://user-images.githubusercontent.com/72696170/181349472-ddfcb9cd-329a-4820-9fbc-c363cdacd6e4.png)
+
+# CONTRIBUTORS
+
+# ACKNOWLEDGEMENT
+
+# CONTACTS
