@@ -1,6 +1,6 @@
 # iiitb_tlc - Traffic Light Controller
 # INTRODUCTION
-In this project, traffic light controller on a four-way road using is proposed. A sensor on the farm way is to detect if there are any vehicles and change the traffic light to allow the vehicles to cross the highway. Otherwise, highway light is always green since it has higher priority than the farm way.
+In this project, traffic light controller on a four-way road using a sensor is proposed. A sensor on the farm way is to detect if there are any vehicles and change the traffic light to allow the vehicles to cross the highway. Otherwise, highway light is always green since it has higher priority than the farm way.
 
 # WORKING
   The circuit has three input signals (C, clk, rst_n) and two output signals (light_farm, light_highway). Input signal ‘C’ refers to the sensor on the farm way to detect if there are any vehicles on highway. If sensor detects any vehicle on highway (i.e., C = 1), then the traffic light on farm way i.e., the output ‘light_farm’ turns red and the traffic light on highway i.e., the output ‘light_highway’ turns green. When there are no vehicles on highway (i.e., C = 0), light_farm turns green and light_highway turns red. But highway has higher priority than the farm way. Both the output signals are of 3-bit size.
@@ -43,7 +43,14 @@ The block diagram of the traffic light controller is shown in the figure above.
 # PRE-LAYOUT SIMULATION
  ![image](https://user-images.githubusercontent.com/72696170/181349472-ddfcb9cd-329a-4820-9fbc-c363cdacd6e4.png)
 
+# AUTHOR
+Lokesh Maji
+
 # CONTRIBUTORS
+* Kunal Ghosh
+* Arsh Kedia
+* Rohit Raj
+* Siddhant Nayak
 
 # ACKNOWLEDGEMENT
 
