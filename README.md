@@ -19,13 +19,26 @@ Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a comp
 GTKWave is a VCD waveform viewer based on the GTK library. This viewer support VCD and LXT formats for signal dumps. Waveform dumps are written by the Icarus Verilog runtime program vvp. The user uses $dumpfile and $dumpvars system tasks to enable waveform dumping, then the vvp runtime takes care of the rest. The output is written into the file specified by the $dumpfile system task. If the $dumpfile call is absent, the compiler will choose the file name dump.vcd or dump.lxt, depending on runtime flags.
 
 **Installing iverilog and GTKWave in Ubuntu**
+
 Open your terminal and type the following commands:
 
 $ sudo apt get iverilog
+
 $ sudo apt get install iverilog gtkwave
 
 To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
 
+$   sudo apt install -y git
+
+$   git clone https://github.com/sanampudig/iiitb_pwm_gen
+
+$   cd iiitb_tlc
+
+$   iverilog iiitb_tlc.v iiitb_tlc_tb.v
+
+$   ./a.out
+
+$   gtkwave tlc_out.vcd
 
 # BLOCK DIAGRAM
  ![image](https://user-images.githubusercontent.com/72696170/181302041-489c49ad-2ba5-4083-ac92-8a216c5a46e1.png)
