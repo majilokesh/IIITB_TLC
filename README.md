@@ -53,5 +53,11 @@ Lokesh Maji
 * Siddhant Nayak
 
 # ACKNOWLEDGEMENT
+Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 
 # CONTACTS
+* Lokesh Maji, M.Tech - VLSI, Batch: 2022-24, IIITB, majilokesh10@gmail.com
+* Rohit Raj, M.Tech - VLSI, Batch: 2022-24, IIITB, 
+* Siddhant Nayek, M.Tech - VLSI, Batch: 2022-24, IIITB,
+
+* Kunal Ghosh, Diretor, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
