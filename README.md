@@ -61,3 +61,12 @@ Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 * Siddhant Nayek, M.Tech - VLSI, Batch: 2022-24, IIITB, siddhantn72@gmail.com
 * Arsh Kedia, M.Tech - VLSI, Batch: 2022-24, IIITB, 
 * Kunal Ghosh, Diretor, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
+
+# REFERENCES
+  [1]   Verilog HDL: A Guide to Digital Design and Synthesis, Samir Palnitkar, Prentice Hall Professional, 2003
+
+  [2]   https://www.fpga4student.com
+
+  [3]   https://vlsicoding.blogspot.com
+
+  [4]   S. V. Kishore, V. Sreeja, V. Gupta, V. Videesha, I. B. K. Raju and K. M. Rao, "FPGA based traffic light controller," 2017 International       Conference on Trends in Electronics and Informatics (ICEI), 2017, pp. 469-475, doi: 10.1109/ICOEI.2017.8300971.
