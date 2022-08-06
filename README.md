@@ -38,12 +38,17 @@ $   gtkwave tlc_out.vcd
 
 # About Yosys
 Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains.
-  Synthesis transforms the simple RTL design into a gate-level netlist with all the constraints as specified by the designer. In simple language, Synthesis is a process that converts the abstract form of design to a properly implemented chip in terms of logic gates.
-  
+
+Synthesis transforms the simple RTL design into a gate-level netlist with all the constraints as specified by the designer. In simple language, Synthesis is a process that converts the abstract form of design to a properly implemented chip in terms of logic gates.
+
 Synthesis takes place in multiple steps:
   * Converting RTL into simple logic gates.
   * Mapping those gates to actual technology-dependent logic gates available in the technology libraries.
   * Optimizing the mapped netlist keeping the constraints set by the designer intact.
+
+Yosys can be adapted to perform any synthesis job by combining the existing passes (algorithms) using synthesis scripts and adding additional passes as needed by extending the yosys C++ code base.
+
+Yosys is free software licensed under the ISC license (a GPL compatible license that is similar in terms to the MIT license or the 2-clause BSD license).
 
 
 # BLOCK DIAGRAM
