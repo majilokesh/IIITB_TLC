@@ -83,7 +83,7 @@ $ make test
  
 The block diagram of the traffic light controller is shown in the figure above.
 
-# PRE-LAYOUT SIMULATION
+# SIMULATION
  ![image](https://user-images.githubusercontent.com/72696170/181349472-ddfcb9cd-329a-4820-9fbc-c363cdacd6e4.png)
 
 # AUTHOR
