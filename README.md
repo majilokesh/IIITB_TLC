@@ -82,6 +82,7 @@ $ make test
 GLS is generating the simulation output by running test bench with netlist file generated from synthesis as design under test. Netlist is logically same as RTL code, therefore, same test bench can be used for it.
 
 **Why GLS?**
+
 The main reasons for running GLS are as follows:
 
   * To verify the power up and reset operation of the design and also to check that the design does not have any unintentional dependencies on initial conditions.
@@ -98,12 +99,19 @@ The main reasons for running GLS are as follows:
   * To check if design works at the desired frequency with actual delays in place.
   * It is a probable method to find out the need for synchronizers if absent in design. It will cause “x” propagation on timing violation on that flop.
 
+Below picture gives an insight of the procedure. Here while using iverilog, you also include gate level verilog models to generate GLS simulation.
+
+![image](https://user-images.githubusercontent.com/72696170/183296780-4bad9547-69e9-4cee-b791-acb5a38951bf.png)
+
+
 # BLOCK DIAGRAM
+
  ![image](https://user-images.githubusercontent.com/72696170/181302041-489c49ad-2ba5-4083-ac92-8a216c5a46e1.png)
  
 The block diagram of the traffic light controller is shown in the figure above.
 
 # SIMULATION
+
  ![image](https://user-images.githubusercontent.com/72696170/181349472-ddfcb9cd-329a-4820-9fbc-c363cdacd6e4.png)
 
 # AUTHOR
