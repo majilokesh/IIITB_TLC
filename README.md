@@ -50,7 +50,33 @@ Yosys can be adapted to perform any synthesis job by combining the existing pass
 
 Yosys is free software licensed under the ISC license (a GPL compatible license that is similar in terms to the MIT license or the 2-clause BSD license).
 
+You need a C++ compiler with C++11 support (up-to-date CLANG or GCC is recommended) and some standard tools such as GNU Flex, GNU Bison, and GNU Make. TCL, readline and libffi are optional (see `ENABLE_*` settings in Makefile). Xdot (graphviz) is used by the ``show`` command in yosys to display schematics.
 
+For example on Ubuntu the following commands will install all prerequisites for building yosys:
+```
+$ sudo apt-get install build-essential clang bison flex \ libreadline-dev gawk tcl-dev libffi-dev git \ graphviz xdot pkg-config python3 libboost-system-dev \ libboost-python-dev libboost-filesystem-dev zlib1g-dev
+```
+To configure the build system to use a specific compiler, use one of the following command:
+```
+$ make config-clang
+$ make config-gcc
+```
+For other compilers and build configurations it might be necessary to make some changes to the config section of the Makefile.
+```
+$ vi Makefile            # ..or..
+$ vi Makefile.conf
+```
+To build Yosys simply type 'make' in this directory.
+```
+$ make
+$ sudo make install
+```
+Note that this also downloads, builds and installs ABC (using yosys-abc as executable name).
+
+Tests are located in the tests subdirectory and can be executed using the test target. Note that you need gawk as well as a recent version of iverilog (i.e. build from git). Then, execute tests via:
+```
+$ make test
+```
 
 # BLOCK DIAGRAM
  ![image](https://user-images.githubusercontent.com/72696170/181302041-489c49ad-2ba5-4083-ac92-8a216c5a46e1.png)
