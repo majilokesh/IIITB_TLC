@@ -115,7 +115,7 @@ Pre - synthesis simulation waveform:
 ![Screenshot from 2022-08-09 20-26-56](https://user-images.githubusercontent.com/72696170/183684179-fd24a727-274e-4378-9e9e-d08b57319e07.png)
 
 Post - synthesis simulation waveform:
-![post_layout](https://user-images.githubusercontent.com/72696170/183681694-8f9014f1-5144-488b-b44b-247e58615c3e.png)
+![new](https://user-images.githubusercontent.com/72696170/183686173-27cc29ad-0a35-46bd-b215-8693b93d0bb4.png)
 
 
 # AUTHOR
