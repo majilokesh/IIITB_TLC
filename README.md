@@ -111,8 +111,12 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 The block diagram of the traffic light controller is shown in the figure above.
 
 # SIMULATION
+Pre - synthesis simulation waveform:
+![Screenshot from 2022-08-09 20-26-56](https://user-images.githubusercontent.com/72696170/183684179-fd24a727-274e-4378-9e9e-d08b57319e07.png)
 
- ![image](https://user-images.githubusercontent.com/72696170/181349472-ddfcb9cd-329a-4820-9fbc-c363cdacd6e4.png)
+Post - synthesis simulation waveform:
+![post_layout](https://user-images.githubusercontent.com/72696170/183681694-8f9014f1-5144-488b-b44b-247e58615c3e.png)
+
 
 # AUTHOR
 Lokesh Maji
