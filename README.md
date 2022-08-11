@@ -117,6 +117,9 @@ Pre - synthesis simulation waveform:
 Post - synthesis simulation waveform:
 ![post3](https://user-images.githubusercontent.com/72696170/183686995-31100838-7e0d-4f0f-bf9c-2f04e289b2b9.png)
 
+# FUTURE WORKS
+* Output is giving don't care condition, some modification is needed.
+* Truth table of the sky130 cells are missing
 
 # AUTHOR
 Lokesh Maji
