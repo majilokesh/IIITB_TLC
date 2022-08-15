@@ -6,7 +6,7 @@
 //
 // Create Date:   04:31:28 07/27/2022
 // Design Name:   traffic_light
-// Module Name:   /home/ise/traffic/tb_traffic.v
+// Module Name:   /home/iiitb_tlc/iiitb_tlc_tb.v
 // Project Name:  traffic
 // Target Device:  
 // Tool versions:  
