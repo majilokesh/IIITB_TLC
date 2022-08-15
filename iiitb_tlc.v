@@ -4,8 +4,8 @@
 // Engineer: 
 // 
 // Create Date:    13:32:27 07/24/2022 
-// Design Name: 
-// Module Name:    traffic_light 
+// Design Name:	   traffic_light
+// Module Name:    /home/iiitb_tlc/iiitb_tlc.v 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
