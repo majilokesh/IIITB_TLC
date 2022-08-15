@@ -17,3 +17,4 @@ clean
 # write synthesized design
 write_verilog -noattr iiitb_tlc_synth.v
 stat
+show
