@@ -112,14 +112,14 @@ The block diagram of the traffic light controller is shown in the figure above.
 
 # SIMULATION
 Pre - synthesis simulation waveform:
-![Screenshot from 2022-08-09 20-26-56](https://user-images.githubusercontent.com/72696170/183684179-fd24a727-274e-4378-9e9e-d08b57319e07.png)
+![pre](https://user-images.githubusercontent.com/72696170/184681752-a64da83f-97fa-4caa-9ee5-fc45561564ff.png)
 
 Post - synthesis simulation waveform:
-![post3](https://user-images.githubusercontent.com/72696170/183686995-31100838-7e0d-4f0f-bf9c-2f04e289b2b9.png)
+![post](https://user-images.githubusercontent.com/72696170/184681803-e74315e0-bbed-4c91-aef5-014fb02a85a3.png)
 
 # FUTURE WORKS
-* Output is giving don't care condition, some modification is needed.
-* Truth table of the sky130 cells are missing
+* Installation of openlane.
+* Floor planning.
 
 # AUTHOR
 Lokesh Maji
