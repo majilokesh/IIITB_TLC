@@ -117,6 +117,10 @@ Pre - synthesis simulation waveform:
 Post - synthesis simulation waveform:
 ![post](https://user-images.githubusercontent.com/72696170/184681803-e74315e0-bbed-4c91-aef5-014fb02a85a3.png)
 
+Statistics:
+![stat](https://user-images.githubusercontent.com/72696170/185381628-12054403-208e-4e4f-91ec-24b38c26f14c.png)
+
+
 # FUTURE WORKS
 * Installation of openlane.
 * Floor planning.
