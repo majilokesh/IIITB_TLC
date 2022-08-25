@@ -198,8 +198,8 @@ Layout:
 
 
 # FUTURE WORKS
-* Installation of openlane.
-* Floor planning.
+* Chip area calculation
+* Power distribution
 
 # AUTHOR
 Lokesh Maji
