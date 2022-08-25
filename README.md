@@ -194,7 +194,7 @@ Statistics:
 ![stat](https://user-images.githubusercontent.com/72696170/185381628-12054403-208e-4e4f-91ec-24b38c26f14c.png)
 
 Layout:
-![iiitb_tlc_layout](https://user-images.githubusercontent.com/72696170/186617782-b189df69-7089-4ccf-8aa6-60024af57776.png)
+![new magic](https://user-images.githubusercontent.com/72696170/186644539-702183d6-5e4c-4bd9-a7e6-200aa721c9fd.png)
 
 
 # FUTURE WORKS
