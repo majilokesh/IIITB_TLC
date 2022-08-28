@@ -191,10 +191,12 @@ Post - synthesis simulation waveform:
 
 Statistics:
 
-![stat](https://user-images.githubusercontent.com/72696170/185381628-12054403-208e-4e4f-91ec-24b38c26f14c.png)
+![newstat](https://user-images.githubusercontent.com/72696170/187092527-4a4aa515-c2fb-438a-a968-5fc17cb270ec.png)
+
 
 Layout:
-![new magic](https://user-images.githubusercontent.com/72696170/186644539-702183d6-5e4c-4bd9-a7e6-200aa721c9fd.png)
+
+![newlayout](https://user-images.githubusercontent.com/72696170/187092549-1013c175-62c5-47e4-8c86-4b387cd3365c.png)
 
 
 # FUTURE WORKS
