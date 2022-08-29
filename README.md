@@ -189,13 +189,17 @@ Pre - synthesis simulation waveform:
 Post - synthesis simulation waveform:
 ![post](https://user-images.githubusercontent.com/72696170/184681803-e74315e0-bbed-4c91-aef5-014fb02a85a3.png)
 
-Statistics:
+Statistics log:
 
 ![finalstat](https://user-images.githubusercontent.com/72696170/187134319-fb39e76b-83ff-4415-a347-79e4032f350b.png)
 
 Layout:
 
 ![magictlc](https://user-images.githubusercontent.com/72696170/187134375-8cdb9d66-531a-4251-be53-536a40728aa0.png)
+
+Clock-Tree_Synthesis log:
+
+![ctslog](https://user-images.githubusercontent.com/72696170/187135200-9e524fef-0d98-480b-9119-e4fdaa8d9a49.png)
 
 
 # FUTURE WORKS
