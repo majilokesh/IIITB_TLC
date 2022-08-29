@@ -191,17 +191,19 @@ Post - synthesis simulation waveform:
 
 Statistics:
 
-![newstat](https://user-images.githubusercontent.com/72696170/187092527-4a4aa515-c2fb-438a-a968-5fc17cb270ec.png)
-
+![finalstat](https://user-images.githubusercontent.com/72696170/187134319-fb39e76b-83ff-4415-a347-79e4032f350b.png)
 
 Layout:
 
-![newlayout](https://user-images.githubusercontent.com/72696170/187092549-1013c175-62c5-47e4-8c86-4b387cd3365c.png)
+![magictlc](https://user-images.githubusercontent.com/72696170/187134375-8cdb9d66-531a-4251-be53-536a40728aa0.png)
 
 
 # FUTURE WORKS
 * Chip area calculation
 * Power distribution
+* Routing
+* Magic DRC
+* Antenna check
 
 # AUTHOR
 Lokesh Maji
