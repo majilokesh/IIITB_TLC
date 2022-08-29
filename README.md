@@ -195,7 +195,8 @@ Statistics log:
 
 Layout:
 
-![magic2](https://user-images.githubusercontent.com/72696170/187135497-63d29de6-e971-4885-8de9-6de4dabe32cc.png)
+![newmagic](https://user-images.githubusercontent.com/72696170/187266825-77b828df-6fcd-468c-ac94-0b557b7caa18.png)
+
 
 Clock-Tree_Synthesis log:
 
