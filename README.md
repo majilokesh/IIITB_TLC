@@ -266,17 +266,6 @@ GLS simulation waveform:
 
 ![post](https://user-images.githubusercontent.com/72696170/184681803-e74315e0-bbed-4c91-aef5-014fb02a85a3.png)
 
-Statistics log:
-
-
-
-Layout:
-
-![goodmagic](https://user-images.githubusercontent.com/72696170/187387878-6f0734d6-0582-49e7-9413-9c50abe26108.png)
-
-
-![vsdinvintlc](https://user-images.githubusercontent.com/72696170/187387237-4a3ce9e6-4765-45ce-a05e-ef2bfc88794c.png)
-
 
 Clock-Tree_Synthesis log:
 
@@ -390,7 +379,16 @@ run_floorplan
 **Floorplan report**
 
 ![fp1](https://user-images.githubusercontent.com/72696170/187528958-8b5fed43-846d-4715-8738-2484a15c7d3d.png)
-![fp2](https://user-images.githubusercontent.com/72696170/187530487-9643a9fa-6dee-4aff-8dd4-98043bf1fe77.png)
+![fpn](https://user-images.githubusercontent.com/72696170/187531001-994554e9-2fd5-4b18-8813-3604fa13cfcd.png)
+
+To check the floorplan layout invoke magic from the results/floorplan directory:
+```
+magic -T /home/lokesh/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_tlc.def &
+```
+
+**Floorplan Layout**
+
+![fpmag](https://user-images.githubusercontent.com/72696170/187532804-d1cf3437-6abe-4ba3-949d-3ae2cd3236e2.png)
 
 
 ### 3. Placement
@@ -403,6 +401,18 @@ run_placement
 **Placement report*
 
 ![pl](https://user-images.githubusercontent.com/72696170/187530134-4e6f6934-0b5f-46ab-9783-9b20e8b5e423.png)
+
+To check the placemnt layout invoke magic from the results/placement directory:
+```
+magic -T /home/lokesh/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_tlc.def &
+```
+
+**Placement Layout**
+
+![goodmagic](https://user-images.githubusercontent.com/72696170/187387878-6f0734d6-0582-49e7-9413-9c50abe26108.png)
+
+
+![vsdinvintlc](https://user-images.githubusercontent.com/72696170/187387237-4a3ce9e6-4765-45ce-a05e-ef2bfc88794c.png)
 
 
 # FUTURE WORKS
