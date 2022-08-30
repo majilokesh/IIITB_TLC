@@ -281,20 +281,24 @@ Clock-Tree_Synthesis log:
 ![ctslog](https://user-images.githubusercontent.com/72696170/187135200-9e524fef-0d98-480b-9119-e4fdaa8d9a49.png)
 
 # Inverter Standard Cell Layout Extraction
-The Magic layout of a CMOS inverter will be used so as to intergate the inverter with the picorv32a design. To do this, inverter magic file is sourced from vsdstdcelldesign by cloning it within the openlane directory as follows:
+The Magic layout of a CMOS inverter will be used so as to intergate the inverter with the iiitb_tlc design. To do this, inverter magic file is sourced from vsdstdcelldesign by cloning it within the openlane directory as follows:
 
 ```
 git clone https://github.com/nickson-jose/vsdstdcelldesign
 ```
+
 This creates a vsdstdcelldesign named folder in the openlane directory.
 
 To invoke magic to view the sky130_inv.mag file, the sky130A.tech file must be included in the command along with its path. To ease up the complexity of this command, the tech file can be copied from the magic folder to the vsdstdcelldesign folder.
 
 The sky130_inv.mag file can then be invoked in Magic very easily by typing the following command in terminal in the vsdstdcelldesign directory:
+
 ```
 magic -T sky130A.tech sky130_inv.mag &
 ```
+
 Layout of sky130_vsdinv cell:
+
 ![ss1](https://user-images.githubusercontent.com/72696170/187520717-fe0f8bdf-bacd-44d2-9e21-87afe2557b0a.png)
 
 In Sky130 the first layer is called the local interconnect layer or Locali.
@@ -336,7 +340,7 @@ port use signal
 Select Y area in magic toplevel and then type the following command in magic tkcon:
 ```
 port class output
-port class signal
+port use signal
 ```
 Select VPWR area in magic toplevel and then type the following command in magic tkcon:
 ```
