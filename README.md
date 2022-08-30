@@ -387,10 +387,22 @@ run_floorplan
 
 ![n2](https://user-images.githubusercontent.com/72696170/187528825-b7780eae-3e96-4959-9b68-bb0338d13797.png)
 
-**Floorplan components report**
+**Floorplan report**
 
 ![fp1](https://user-images.githubusercontent.com/72696170/187528958-8b5fed43-846d-4715-8738-2484a15c7d3d.png)
-![fp2](https://user-images.githubusercontent.com/72696170/187529004-784347e2-28d7-437c-9f90-1716dcbe9000.png)
+![fp2](https://user-images.githubusercontent.com/72696170/187530487-9643a9fa-6dee-4aff-8dd4-98043bf1fe77.png)
+
+
+### 3. Placement
+After floorplan type the following command to do placement:
+```
+run_placement
+```
+![n3](https://user-images.githubusercontent.com/72696170/187529699-8507d1d7-72f7-4937-98ce-9e64079580af.png)
+
+**Placement report*
+
+![pl](https://user-images.githubusercontent.com/72696170/187530134-4e6f6934-0b5f-46ab-9783-9b20e8b5e423.png)
 
 
 # FUTURE WORKS
