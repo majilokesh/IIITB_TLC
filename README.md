@@ -379,6 +379,18 @@ run_synthesis
 
 ![finalstat](https://user-images.githubusercontent.com/72696170/187134319-fb39e76b-83ff-4415-a347-79e4032f350b.png)
 
+### 2. Floorplan
+Next floorplan is run by typing the following command:
+```
+run_floorplan
+```
+
+![n2](https://user-images.githubusercontent.com/72696170/187528825-b7780eae-3e96-4959-9b68-bb0338d13797.png)
+
+**Floorplan components report**
+
+![fp1](https://user-images.githubusercontent.com/72696170/187528958-8b5fed43-846d-4715-8738-2484a15c7d3d.png)
+![fp2](https://user-images.githubusercontent.com/72696170/187529004-784347e2-28d7-437c-9f90-1716dcbe9000.png)
 
 
 # FUTURE WORKS
