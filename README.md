@@ -156,7 +156,7 @@ type **magic** terminal to check whether it installed succesfully or not. type *
 # Generating Layout
 
 ### Non-interactive OpenLane flow
-Open terminal in home directory
+Open terminal in home directory and type the following commands:
 ```
 $   cd OpenLane/
 $   cd designs/
@@ -221,12 +221,6 @@ There are no max slew violations in the design at the typical corner, There are 
 
 ```
 
-To see the layout we use a tool called magic which we installed earlier.Type the following command in the terminal opened in the path to your design/runs/latest run folder/final/def/
- 
-```
-magic -T /home/lokesh/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.min.lef def read iiitb_tlc.def
-```
-
 ### Interactive OpenLane flow
 Open terminal in home directory and then type the following:
 ```
@@ -249,6 +243,12 @@ run_magic_drc
 run_netgen
 run_magic_antenna_check
 
+```
+
+To see the layout we use a tool called magic which we installed earlier.Type the following command in the terminal opened in the path to your design/runs/latest run folder/results/final/def/
+ 
+```
+magic -T /home/lokesh/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_tlc.def &
 ```
 
 # BLOCK DIAGRAM
@@ -279,6 +279,84 @@ Layout:
 Clock-Tree_Synthesis log:
 
 ![ctslog](https://user-images.githubusercontent.com/72696170/187135200-9e524fef-0d98-480b-9119-e4fdaa8d9a49.png)
+
+# Inverter Standard Cell Layout Extraction
+The Magic layout of a CMOS inverter will be used so as to intergate the inverter with the picorv32a design. To do this, inverter magic file is sourced from vsdstdcelldesign by cloning it within the openlane directory as follows:
+
+```
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+```
+This creates a vsdstdcelldesign named folder in the openlane directory.
+
+To invoke magic to view the sky130_inv.mag file, the sky130A.tech file must be included in the command along with its path. To ease up the complexity of this command, the tech file can be copied from the magic folder to the vsdstdcelldesign folder.
+
+The sky130_inv.mag file can then be invoked in Magic very easily by typing the following command in terminal in the vsdstdcelldesign directory:
+```
+magic -T sky130A.tech sky130_inv.mag &
+```
+Layout of sky130_vsdinv cell:
+![ss1](https://user-images.githubusercontent.com/72696170/187520717-fe0f8bdf-bacd-44d2-9e21-87afe2557b0a.png)
+
+In Sky130 the first layer is called the local interconnect layer or Locali.
+
+To verify whether the layout is that of CMOS inverter, verification of P-diffusiona nd N-diffusion regions with Polysilicon can be observed.
+
+Other verification steps are to check drain and source connections. The drains of both PMOS and NMOS must be connected to output port (here, Y) and the sources of both must be connected to power supply VDD (here, VPWR).
+
+**LEF or library exchange format**: A format that tells us about cell boundaries, VDD and GND lines. It contains no info about the logic of circuit and is also used to protect the IP.
+
+### Create port definition
+Once the layout is ready, the next step is extracting LEF file for the cell. However, certain properties and definitions need to be set to the pins of the cell which aid the placer and router tool. For LEF files, a cell that contains ports is written as a macro cell, and the ports are the declared PINs of the macro. Our objective is to extract LEF from a given layout (here of a simple CMOS inverter) in standard format. Defining port and setting correct class and use attributes to each port is the first step.
+
+The easiest way to define a port is through Magic Layout window and following are the steps:
+* In Magic Layout window, first source the .mag file for the design (here inverter). Then Edit >> Text which opens up a dialogue box.
+
+![ss2](https://user-images.githubusercontent.com/72696170/187522004-14034054-cb4b-4127-b7e7-1c89f73427c0.png)
+
+* For each layer (to be turned into port), make a box on that particular layer and input a label name along with a sticky label of the layer name with which the port needs to be associated. Ensure the Port enable checkbox is checked and default checkbox is unchecked as shown in the figure:
+
+![ss3](https://user-images.githubusercontent.com/72696170/187522485-509c2843-09e8-4af5-a147-29764677caf6.png)
+
+In the above two figures, port A (input port) and port Y (output port) are taken from locali (local interconnect) layer. Also, the number in the textarea near enable checkbox defines the order in which the ports will be written in LEF file (0 being the first).
+
+* For power and ground layers, the definition could be same or different than the signal layer. Here, ground and power connectivity are taken from metal1 (Notice the sticky label).
+
+![ss4](https://user-images.githubusercontent.com/72696170/187523051-6184f74d-9ac1-4ac7-963d-afcc48d26597.png)
+
+![ss5](https://user-images.githubusercontent.com/72696170/187523091-b0d6278f-f044-477a-9885-eee4068a2b82.png)
+
+### Standard Cell LEF generation
+Before the CMOS Inverter standard cell LEF is extracted, the purpose of ports must be defined:
+
+Select A area in magic toplevel and then type the following command in magic tkcon:
+```
+port class input
+port use signal
+```
+Select Y area in magic toplevel and then type the following command in magic tkcon:
+```
+port class output
+port class signal
+```
+Select VPWR area in magic toplevel and then type the following command in magic tkcon:
+```
+port class inout
+port use power
+```
+
+Select VGND area in magic toplevel and then type the following command in magic tkcon:
+```
+port class inout
+port use ground
+```
+
+For LEF extraction type the following command in magic tkcon:
+
+```
+lef write
+```
+
+This generates ```sky130_vsdinv.lef``` file.
 
 
 # FUTURE WORKS
