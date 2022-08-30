@@ -394,7 +394,7 @@ run_placement
 ```
 ![n3](https://user-images.githubusercontent.com/72696170/187529699-8507d1d7-72f7-4937-98ce-9e64079580af.png)
 
-**Placement report*
+**Placement report**
 
 ![pl](https://user-images.githubusercontent.com/72696170/187530134-4e6f6934-0b5f-46ab-9783-9b20e8b5e423.png)
 
