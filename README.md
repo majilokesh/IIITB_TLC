@@ -1,8 +1,8 @@
 # iiitb_tlc - Traffic Light Controller
-# INTRODUCTION
+# Introduction
 In this project, traffic light controller on a four-way road using a sensor is proposed. A sensor on the farm way is to detect if there are any vehicles and change the traffic light to allow the vehicles to cross the highway. Otherwise, highway light is always green since it has higher priority than the farm way.
 
-# WORKING
+# Working
   The circuit has three input signals (C, clk, rst_n) and two output signals (light_farm, light_highway). Input signal ‘C’ refers to the sensor on the farm way to detect if there are any vehicles on highway. If sensor detects any vehicle on highway (i.e., C = 1), then the traffic light on farm way i.e., the output ‘light_farm’ turns red and the traffic light on highway i.e., the output ‘light_highway’ turns green. When there are no vehicles on highway (i.e., C = 0), light_farm turns green and light_highway turns red. But highway has higher priority than the farm way. Both the output signals are of 3-bit size.
   
   In output signal, "001" represents Green light, "010" represents Yellow light and “100” represents Red light. ‘Clk’ is the clock signal and ‘rst_n’ is the active low reset signal. The circuit is designed to work at the positive edge of the clock signal, while at the negative edge of the rst_n the output signal is reset to default state i.e., Red light.
@@ -251,22 +251,24 @@ To see the layout we use a tool called magic which we installed earlier.Type the
 magic -T /home/lokesh/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_tlc.def &
 ```
 
-# BLOCK DIAGRAM
+# Block Diagram
 
  ![image](https://user-images.githubusercontent.com/72696170/181302041-489c49ad-2ba5-4083-ac92-8a216c5a46e1.png)
  
 The block diagram of the traffic light controller is shown in the figure above.
 
-# SIMULATION
-Pre - synthesis simulation waveform:
+# Simulation
+RTL simulation waveform:
+
 ![pre](https://user-images.githubusercontent.com/72696170/184681752-a64da83f-97fa-4caa-9ee5-fc45561564ff.png)
 
-Post - synthesis simulation waveform:
+GLS simulation waveform:
+
 ![post](https://user-images.githubusercontent.com/72696170/184681803-e74315e0-bbed-4c91-aef5-014fb02a85a3.png)
 
 Statistics log:
 
-![finalstat](https://user-images.githubusercontent.com/72696170/187134319-fb39e76b-83ff-4415-a347-79e4032f350b.png)
+
 
 Layout:
 
@@ -361,6 +363,22 @@ lef write
 ```
 
 This generates ```sky130_vsdinv.lef``` file.
+
+# OpenLane Flow Stages
+### 1. Synthesis
+In order to integrate the CMOS inverter standard cell in the OpenLane flow, invoke openlane as usual and carry out following steps:
+```
+prep -design iiitb_tlc
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+run_synthesis
+```
+![n1](https://user-images.githubusercontent.com/72696170/187526655-0873def5-6807-4325-927e-5c3eb23fe7d9.png)
+
+**Synthesis statistics report:**
+
+![finalstat](https://user-images.githubusercontent.com/72696170/187134319-fb39e76b-83ff-4415-a347-79e4032f350b.png)
+
 
 
 # FUTURE WORKS
