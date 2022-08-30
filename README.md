@@ -267,10 +267,6 @@ GLS simulation waveform:
 ![post](https://user-images.githubusercontent.com/72696170/184681803-e74315e0-bbed-4c91-aef5-014fb02a85a3.png)
 
 
-Clock-Tree_Synthesis log:
-
-![ctslog](https://user-images.githubusercontent.com/72696170/187135200-9e524fef-0d98-480b-9119-e4fdaa8d9a49.png)
-
 # Inverter Standard Cell Layout Extraction
 The Magic layout of a CMOS inverter will be used so as to intergate the inverter with the iiitb_tlc design. To do this, inverter magic file is sourced from vsdstdcelldesign by cloning it within the openlane directory as follows:
 
@@ -376,7 +372,7 @@ run_floorplan
 
 ![n2](https://user-images.githubusercontent.com/72696170/187528825-b7780eae-3e96-4959-9b68-bb0338d13797.png)
 
-**Floorplan report**
+**Floorplan components report**
 
 ![fp1](https://user-images.githubusercontent.com/72696170/187528958-8b5fed43-846d-4715-8738-2484a15c7d3d.png)
 ![fpn](https://user-images.githubusercontent.com/72696170/187531001-994554e9-2fd5-4b18-8813-3604fa13cfcd.png)
@@ -411,15 +407,30 @@ magic -T /home/lokesh/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef
 
 ![goodmagic](https://user-images.githubusercontent.com/72696170/187387878-6f0734d6-0582-49e7-9413-9c50abe26108.png)
 
+sky130_vsdinv cell integrated inside iiitb_tlc design:
 
 ![vsdinvintlc](https://user-images.githubusercontent.com/72696170/187387237-4a3ce9e6-4765-45ce-a05e-ef2bfc88794c.png)
 
 
+### 4. Clock Tree Synthesis
+The purpose of building a clock tree is enable the clock input to reach every element and to ensure a zero clock skew. H-tree is a common methodology followed in CTS. To run CTS type the following command after placement:
+```
+run_cts
+```
+
+![n4](https://user-images.githubusercontent.com/72696170/187535234-fd1edb05-f5d9-4266-ba01-2baee98e0835.png)
+
+**CTS report**
+
+![cts1](https://user-images.githubusercontent.com/72696170/187537368-a59250ea-2eef-490e-a534-730cbc36d184.png)
+![cts2](https://user-images.githubusercontent.com/72696170/187537400-f92e8880-06fc-4c71-8126-ed7cc35182a6.png)
+![cts3](https://user-images.githubusercontent.com/72696170/187537421-7e93eb69-ef28-4834-a779-72cb70f52dcb.png)
+
+
 # FUTURE WORKS
-* Chip area calculation
 * Power distribution
 * Routing
-* Magic DRC
+* Magic DRC check
 * Antenna check
 
 # AUTHOR
