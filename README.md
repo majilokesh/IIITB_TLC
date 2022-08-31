@@ -312,9 +312,9 @@ In the above two figures, port A (input port) and port Y (output port) are taken
 
 * For power and ground layers, the definition could be same or different than the signal layer. Here, ground and power connectivity are taken from metal1 (Notice the sticky label).
 
-![ss4](https://user-images.githubusercontent.com/72696170/187523051-6184f74d-9ac1-4ac7-963d-afcc48d26597.png)
+![image](https://user-images.githubusercontent.com/72696170/187597872-49f9dab3-8912-4e48-90ac-46e948b2cc2e.png)
 
-![ss5](https://user-images.githubusercontent.com/72696170/187523091-b0d6278f-f044-477a-9885-eee4068a2b82.png)
+![image](https://user-images.githubusercontent.com/72696170/187597908-563ba176-70f2-411c-8be0-6e5e7c1b940d.png)
 
 ### Standard Cell LEF generation
 Before the CMOS Inverter standard cell LEF is extracted, the purpose of ports must be defined:
