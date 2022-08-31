@@ -14,7 +14,7 @@ There are four cases in this controller circuit:
 4. Red on highway and yellow on farm way
 
 # iverilog and GTKWave
-Icarus Verilog (iverilog) is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the ``vvp'' command. For synthesis, the compiler generates netlists in the desired format. The compiler proper is intended to parse and elaborate design descriptions written to the IEEE standard IEEE Std 1364-2005.
+Icarus Verilog (iverilog) is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the ''vvp'' command. For synthesis, the compiler generates netlists in the desired format. The compiler proper is intended to parse and elaborate design descriptions written to the IEEE standard IEEE Std 1364-2005.
 
 GTKWave is a VCD waveform viewer based on the GTK library. This viewer support VCD and LXT formats for signal dumps. Waveform dumps are written by the Icarus Verilog runtime program vvp. The user uses $dumpfile and $dumpvars system tasks to enable waveform dumping, then the vvp runtime takes care of the rest. The output is written into the file specified by the $dumpfile system task. If the $dumpfile call is absent, the compiler will choose the file name dump.vcd or dump.lxt, depending on runtime flags.
 
@@ -436,20 +436,11 @@ run_cts
 # AUTHOR
 Lokesh Maji
 
-# CONTRIBUTORS
-* Kunal Ghosh
-* Arsh Kedia
-* Rohit Raj
-* Siddhant Nayak
-
 # ACKNOWLEDGEMENT
 Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 
 # CONTACTS
 * Lokesh Maji, M.Tech - VLSI, Batch: 2022-24, IIITB, majilokesh10@gmail.com
-* Rohit Raj, M.Tech - VLSI, Batch: 2022-24, IIITB, 
-* Siddhant Nayak, M.Tech - VLSI, Batch: 2022-24, IIITB, siddhantn72@gmail.com
-* Arsh Kedia, M.Tech - VLSI, Batch: 2022-24, IIITB, arshkedia99@gmail.com
 * Kunal Ghosh, Diretor, VSD Corp. Pvt. Ltd., kunalpghosh@gmail.com
 
 # REFERENCES
