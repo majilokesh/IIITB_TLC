@@ -426,6 +426,12 @@ run_cts
 ![cts2](https://user-images.githubusercontent.com/72696170/187537400-f92e8880-06fc-4c71-8126-ed7cc35182a6.png)
 ![cts3](https://user-images.githubusercontent.com/72696170/187537421-7e93eb69-ef28-4834-a779-72cb70f52dcb.png)
 
+### 5. Power Distribution Network
+![pdn](https://user-images.githubusercontent.com/72696170/189105590-9297c488-9d9a-4f37-a5fe-5bd8007e908b.png)
+
+### 6. Routing
+![routing](https://user-images.githubusercontent.com/72696170/189105715-fef7ff29-ba87-4d78-b418-69ab11cd89c9.png)
+
 
 # FUTURE WORKS
 * Power distribution
