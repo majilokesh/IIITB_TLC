@@ -472,8 +472,8 @@ Running routing step in TritonRoute as part of openLANE flow:
 * For the default setting picorv32a takes approximately 30 minutesaccording to the current version of TritonRoute.
 * This routing stage must have the CURRENT_DEF set to pdn.def
 * The two stages of routing are performed by the following engines:
-**  Global Route : Fast Route
-**  Detailed Route : Triton Route
+  *  Global Route : Fast Route
+  *  Detailed Route : Triton Route
 * Fast Route generates the routing guides, whereas Triton Route uses the Global Route and then completes the routing with some strategies and optimisations for finding the best possible path connect the pins.
 
 ![routing](https://user-images.githubusercontent.com/72696170/189105715-fef7ff29-ba87-4d78-b418-69ab11cd89c9.png)
