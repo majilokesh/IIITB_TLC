@@ -449,6 +449,33 @@ We can confirm the success of PDN by checking the current def environment variab
 * There are definitions for the straps and the railss. In this design straps are at metal layer 4 and 5 and the standard cell rails are at the metal layer 1. Vias connect accross the layers as required.
 
 ### 6. Routing
+
+OpenLANE uses the TritonRoute tool for routing. There are 2 stages of routing:
+
+  1. Global routing: Routing region is divided into rectangle grids which are represented as course 3D routes (Fastroute tool).
+  2. Detailed routing: Finer grids and routing guides used to implement physical wiring (TritonRoute tool).
+
+Features of TritonRoute:
+
+1.  Honouring pre-processed route guides
+2.  Assumes that each net satisfies inter guide connectivity
+3.  Uses MILP based panel routing scheme
+4.  Intra-layer parallel and inter-layer sequential routing framework
+
+Running routing step in TritonRoute as part of openLANE flow:
+
+```run_routing```
+
+* run_routing - To start the routing
+* The options for routing can be set in the config.tcl file.
+* The optimisations in routing can also be done by specifying the routing strategy to use different version of TritonRoute Engine. There is a trade0ff between the optimised route and the runtime for routing.
+* For the default setting picorv32a takes approximately 30 minutesaccording to the current version of TritonRoute.
+* This routing stage must have the CURRENT_DEF set to pdn.def
+* The two stages of routing are performed by the following engines:
+**  Global Route : Fast Route
+**  Detailed Route : Triton Route
+* Fast Route generates the routing guides, whereas Triton Route uses the Global Route and then completes the routing with some strategies and optimisations for finding the best possible path connect the pins.
+
 ![routing](https://user-images.githubusercontent.com/72696170/189105715-fef7ff29-ba87-4d78-b418-69ab11cd89c9.png)
 
 
