@@ -480,10 +480,10 @@ Running routing step in TritonRoute as part of openLANE flow:
 
 
 # FUTURE WORKS
-* Power distribution
-* Routing
 * Magic DRC check
 * Antenna check
+* LVS check
+* GSDII file generation for tapeout
 
 # AUTHOR
 Lokesh Maji
