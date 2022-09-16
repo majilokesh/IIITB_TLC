@@ -427,7 +427,26 @@ run_cts
 ![cts3](https://user-images.githubusercontent.com/72696170/187537421-7e93eb69-ef28-4834-a779-72cb70f52dcb.png)
 
 ### 5. Power Distribution Network
+
+Unlike the general ASIC flow, Power Distribution Network generation is not a part of floorplan run in OpenLANE. PDN must be generated after CTS and post-CTS STA analyses:
+```
+gen_pdn
+```
+
+We can confirm the success of PDN by checking the current def environment variable: ```echo $::env(CURRENT_DEF)```
+
 ![pdn](https://user-images.githubusercontent.com/72696170/189105590-9297c488-9d9a-4f37-a5fe-5bd8007e908b.png)
+
+* gen_pdn - Generates the Power Distribution network
+* The power distribution network has to take the design_cts.def as the input def file.
+* This will create the grid and the straps for the Vdd and the ground. These are placed around the standard cells.
+* The standard cells are designed such that it's height is multiples of the space between the Vdd and the ground rails. Here, the pitch is 2.72. Only if the above conditions are adhered it is possible to power the standard cells.
+* The power to the chip, enters through the power pads. There is each for Vdd and Gnd
+* From the pads, the power enters the rings, through the via
+* The straps are connected to the ring. Vdd straps are connected to the Vdd ring and the Gnd Straps are connected to the Gnd ring. There are horizontal and the vertical straps
+* Now the power has to be supplied from the straps to the standard cells. The straps are connected to the rails of the standard cells
+* If macros are present then the straps attach to the rings of the macros via the macro pads and the pdn for the macro is pre-done.
+* There are definitions for the straps and the railss. In this design straps are at metal layer 4 and 5 and the standard cell rails are at the metal layer 1. Vias connect accross the layers as required.
 
 ### 6. Routing
 ![routing](https://user-images.githubusercontent.com/72696170/189105715-fef7ff29-ba87-4d78-b418-69ab11cd89c9.png)
