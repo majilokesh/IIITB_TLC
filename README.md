@@ -248,7 +248,7 @@ run_magic_antenna_check
 To see the layout we use a tool called magic which we installed earlier.Type the following command in the terminal opened in the path to your design/runs/latest run folder/results/final/def/
  
 ```
-magic -T /home/lokesh/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_tlc.def &
+magic -T /home/lokesh/openlane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_tlc.def &
 ```
 
 # Block Diagram
@@ -364,8 +364,8 @@ run_synthesis
 
 ![finalstat](https://user-images.githubusercontent.com/72696170/187134319-fb39e76b-83ff-4415-a347-79e4032f350b.png)
 
-
-Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 2 / 15 = 0.133
+*Gate count = 15
+*Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 2 / 15 = 0.133
 
 ### 2. Floorplan
 Next floorplan is run by typing the following command:
@@ -428,6 +428,14 @@ run_cts
 ![cts1](https://user-images.githubusercontent.com/72696170/187537368-a59250ea-2eef-490e-a534-730cbc36d184.png)
 ![cts2](https://user-images.githubusercontent.com/72696170/187537400-f92e8880-06fc-4c71-8126-ed7cc35182a6.png)
 ![cts3](https://user-images.githubusercontent.com/72696170/187537421-7e93eb69-ef28-4834-a779-72cb70f52dcb.png)
+
+To calculate performance i.e. frequency of clock run OpenSta in OpenLane. Type the following commands in OpenLane:
+
+![opensta_command](https://user-images.githubusercontent.com/72696170/192508623-56505a76-6e95-4418-b60f-47a04e5a45ca.png)
+![opensta2](https://user-images.githubusercontent.com/72696170/192508844-556656b4-56ba-44a4-bd68-8866a3b9d973.png)
+
+*Performance = 1 / (Clock Time Period - Slack) = 1 / (24 - 18.06) = 168.35 GHz
+
 
 ### 5. Power Distribution Network
 
