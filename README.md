@@ -2,19 +2,19 @@
 
 # Contents
 
-* [Introduction](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#introduction)<br>
-* [Working](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#working)<br>
-* [iverilog and GTKWave](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#iverilog-and-gtkwave)<br>
-* [yosys](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#yosys--yosys-open-synthesis-suite)<br>
-* [GLS - Gate Level Simulation](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#gls---gate-level-simulation)
-* [Openlane](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#openlane)
-* [Magic](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#magic)
-* [Generating Layout](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#generating-layout)
-* [Block Diagram](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#block-diagram)
-* [Simulation](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#simulation)
-* [Inverter Standard Cell Layout Extraction](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#inverter-standard-cell-layout-extraction)
-* [Openlane Flow Stages](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#openlane-flow-stages)
-* [Future Works](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#future-works)
+* [Introduction](https://github.com/majilokesh/iiitb_tlc#introduction)<br>
+* [Working](https://github.com/majilokesh/iiitb_tlc#working)<br>
+* [iverilog and GTKWave](https://github.com/majilokesh/iiitb_tlc#iverilog-and-gtkwave)<br>
+* [yosys](https://github.com/majilokesh/iiitb_tlc#yosys--yosys-open-synthesis-suite)<br>
+* [GLS - Gate Level Simulation](https://github.com/majilokesh/iiitb_tlc#gls---gate-level-simulation)
+* [Openlane](https://github.com/majilokesh/iiitb_tlc#openlane)
+* [Magic](https://github.com/majilokesh/iiitb_tlc#magic)
+* [Generating Layout](https://github.com/majilokesh/iiitb_tlc#generating-layout)
+* [Block Diagram](https://github.com/majilokesh/iiitb_tlc#block-diagram)
+* [Simulation](https://github.com/majilokesh/iiitb_tlc#simulation)
+* [Inverter Standard Cell Layout Extraction](https://github.com/majilokesh/iiitb_tlc#inverter-standard-cell-layout-extraction)
+* [Openlane Flow Stages](https://github.com/majilokesh/iiitb_tlc#openlane-flow-stages)
+* [Future Works](https://github.com/majilokesh/iiitb_tlc#future-works)
 
 
 # Introduction
