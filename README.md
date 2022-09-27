@@ -490,6 +490,11 @@ Running routing step in TritonRoute as part of openLANE flow:
 
 ![routing](https://user-images.githubusercontent.com/72696170/189105715-fef7ff29-ba87-4d78-b418-69ab11cd89c9.png)
 
+To calculate area type **'box'** command in Tkcon.tcl after selecting the design toplevel in magic.
+![area](https://user-images.githubusercontent.com/72696170/192511349-87081e65-cdb2-417a-8a95-43f57e032cfe.png)
+
+**Area = 4581.68 μm²**
+
 
 # FUTURE WORKS
 * Magic DRC check
