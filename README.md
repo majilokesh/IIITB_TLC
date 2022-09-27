@@ -1,4 +1,22 @@
 # iiitb_tlc - Traffic Light Controller
+
+# Contents
+
+* [Introduction](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#introduction)<br>
+* [Working](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#working)<br>
+* [iverilog and GTKWave](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#iverilog-and-gtkwave)<br>
+* [yosys](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#yosys--yosys-open-synthesis-suite)<br>
+* [GLS - Gate Level Simulation](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#gls---gate-level-simulation)
+* [Openlane](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#openlane)
+* [Magic](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#magic)
+* [Generating Layout](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#generating-layout)
+* [Block Diagram](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#block-diagram)
+* [Simulation](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#simulation)
+* [Inverter Standard Cell Layout Extraction](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#inverter-standard-cell-layout-extraction)
+* [Openlane Flow Stages](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#openlane-flow-stages)
+* [Future Works](https://github.com/majilokesh/iiitb_tlc/edit/main/README.md#future-works)
+
+
 # Introduction
 In this project, traffic light controller on a four-way road using a sensor is proposed. A sensor on the farm way is to detect if there are any vehicles and change the traffic light to allow the vehicles to cross the highway. Otherwise, highway light is always green since it has higher priority than the farm way.
 
