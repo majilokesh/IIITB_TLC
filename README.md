@@ -364,6 +364,9 @@ run_synthesis
 
 ![finalstat](https://user-images.githubusercontent.com/72696170/187134319-fb39e76b-83ff-4415-a347-79e4032f350b.png)
 
+
+Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 2 / 15 = 0.133
+
 ### 2. Floorplan
 Next floorplan is run by typing the following command:
 ```
