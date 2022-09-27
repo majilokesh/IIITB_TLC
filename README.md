@@ -364,8 +364,9 @@ run_synthesis
 
 ![finalstat](https://user-images.githubusercontent.com/72696170/187134319-fb39e76b-83ff-4415-a347-79e4032f350b.png)
 
-*Gate count = 15
-*Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 2 / 15 = 0.133
+**Gate count = 15**
+
+**Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 2 / 15 = 0.133**
 
 ### 2. Floorplan
 Next floorplan is run by typing the following command:
@@ -434,7 +435,7 @@ To calculate performance i.e. frequency of clock run OpenSta in OpenLane. Type t
 ![opensta_command](https://user-images.githubusercontent.com/72696170/192508623-56505a76-6e95-4418-b60f-47a04e5a45ca.png)
 ![opensta2](https://user-images.githubusercontent.com/72696170/192508844-556656b4-56ba-44a4-bd68-8866a3b9d973.png)
 
-*Performance = 1 / (Clock Time Period - Slack) = 1 / (24 - 18.06) = 168.35 GHz
+**Performance = 1 / (Clock Time Period - Slack) = 1 / (24 - 18.06) = 168.35 GHz**
 
 
 ### 5. Power Distribution Network
