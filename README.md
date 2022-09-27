@@ -456,7 +456,7 @@ To calculate performance i.e. frequency of clock run OpenSta in OpenLane. Type t
 
 ![opensta2](https://user-images.githubusercontent.com/72696170/192508844-556656b4-56ba-44a4-bd68-8866a3b9d973.png)
 
-**Performance = 1 / (Clock Time Period - Slack) = 1 / (24 - 18.06) = 168.35 GHz**
+**Performance = 1 / (Clock Time Period - Slack) = 1 / (24 - 18.06) = 168.35 MHz**
 
 
 ### 5. Power Distribution Network
