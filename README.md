@@ -433,6 +433,9 @@ run_cts
 To calculate performance i.e. frequency of clock run OpenSta in OpenLane. Type the following commands in OpenLane:
 
 ![opensta_command](https://user-images.githubusercontent.com/72696170/192508623-56505a76-6e95-4418-b60f-47a04e5a45ca.png)
+
+**OpenSta report**
+
 ![opensta2](https://user-images.githubusercontent.com/72696170/192508844-556656b4-56ba-44a4-bd68-8866a3b9d973.png)
 
 **Performance = 1 / (Clock Time Period - Slack) = 1 / (24 - 18.06) = 168.35 GHz**
