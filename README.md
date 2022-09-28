@@ -454,9 +454,9 @@ To calculate performance i.e. frequency of clock run OpenSta in OpenLane. Type t
 
 **OpenSta report**
 
-![opensta2](https://user-images.githubusercontent.com/72696170/192508844-556656b4-56ba-44a4-bd68-8866a3b9d973.png)
+![3 slack](https://user-images.githubusercontent.com/72696170/192698965-a8c0cfda-2d6c-4211-9b01-90050b2c5aef.png)
 
-**Performance = 1 / (Data Arrival Time + Setup Time) = 1 / (0.89 + 4.80) = 175.75 MHz**
+**Performance = 1 / (Data Arrival Time + Setup Time) = 1 / (0.65 + 0.07) = 1.38 GHz**
 
 
 ### 5. Power Distribution Network
