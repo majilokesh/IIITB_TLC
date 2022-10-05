@@ -1,0 +1,1 @@
+lvs {/openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/results/signoff/iiitb_tlc.spice iiitb_tlc} {/openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/tmp/signoff/37-powered_netlist.v iiitb_tlc} /home/lokesh/openlane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/logs/signoff/40-iiitb_tlc.lef.log -json
