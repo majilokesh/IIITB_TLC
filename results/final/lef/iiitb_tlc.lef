@@ -1,0 +1,178 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO iiitb_tlc
+  CLASS BLOCK ;
+  FOREIGN iiitb_tlc ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 62.540 BY 73.260 ;
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END C
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 17.480 10.640 19.080 60.640 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 30.245 10.640 31.845 60.640 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 43.010 10.640 44.610 60.640 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 55.775 10.640 57.375 60.640 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 22.320 57.375 23.920 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 34.560 57.375 36.160 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 46.800 57.375 48.400 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 59.040 57.375 60.640 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 11.100 10.640 12.700 60.080 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 23.865 10.640 25.465 60.080 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 36.630 10.640 38.230 60.080 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 49.395 10.640 50.995 60.080 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 16.200 56.820 17.800 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 28.440 56.820 30.040 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 40.680 56.820 42.280 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 52.920 56.820 54.520 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 58.050 0.000 58.330 4.000 ;
+    END
+  END clk
+  PIN light_farm[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 48.390 69.260 48.670 73.260 ;
+    END
+  END light_farm[0]
+  PIN light_farm[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 58.540 57.840 62.540 58.440 ;
+    END
+  END light_farm[1]
+  PIN light_farm[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 30.640 4.000 31.240 ;
+    END
+  END light_farm[2]
+  PIN light_highway[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 29.070 0.000 29.350 4.000 ;
+    END
+  END light_highway[0]
+  PIN light_highway[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 61.240 4.000 61.840 ;
+    END
+  END light_highway[1]
+  PIN light_highway[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.190 69.260 16.470 73.260 ;
+    END
+  END light_highway[2]
+  PIN rst_n
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 58.540 27.240 62.540 27.840 ;
+    END
+  END rst_n
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 56.580 59.925 ;
+      LAYER met1 ;
+        RECT 0.070 10.640 58.350 60.080 ;
+      LAYER met2 ;
+        RECT 0.100 68.980 15.910 69.260 ;
+        RECT 16.750 68.980 48.110 69.260 ;
+        RECT 48.950 68.980 58.320 69.260 ;
+        RECT 0.100 4.280 58.320 68.980 ;
+        RECT 0.650 4.000 28.790 4.280 ;
+        RECT 29.630 4.000 57.770 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 60.840 58.570 61.705 ;
+        RECT 4.000 58.840 58.570 60.840 ;
+        RECT 4.000 57.440 58.140 58.840 ;
+        RECT 4.000 31.640 58.570 57.440 ;
+        RECT 4.400 30.240 58.570 31.640 ;
+        RECT 4.000 28.240 58.570 30.240 ;
+        RECT 4.000 26.840 58.140 28.240 ;
+        RECT 4.000 10.715 58.570 26.840 ;
+  END
+END iiitb_tlc
+END LIBRARY
+
