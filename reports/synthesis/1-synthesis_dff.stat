@@ -1,0 +1,21 @@
+
+16. Printing statistics.
+
+=== iiitb_tlc ===
+
+   Number of wires:                  7
+   Number of wire bits:             13
+   Number of public wires:           7
+   Number of public wire bits:      13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $_ANDNOT_                       2
+     $_AND_                          1
+     $_MUX_                          1
+     $_NOR_                          2
+     $_OR_                           1
+     $_XOR_                          1
+     sky130_fd_sc_hd__dfrtp_2        2
+

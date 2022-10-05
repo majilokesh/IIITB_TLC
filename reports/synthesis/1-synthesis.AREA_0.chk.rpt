@@ -1,0 +1,10 @@
+
+23. Executing CHECK pass (checking for obvious problems).
+Checking module iiitb_tlc...
+Warning: Wire iiitb_tlc.\light_highway [2] is used but has no driver.
+Warning: Wire iiitb_tlc.\light_highway [1] is used but has no driver.
+Warning: Wire iiitb_tlc.\light_highway [0] is used but has no driver.
+Warning: Wire iiitb_tlc.\light_farm [2] is used but has no driver.
+Warning: Wire iiitb_tlc.\light_farm [1] is used but has no driver.
+Warning: Wire iiitb_tlc.\light_farm [0] is used but has no driver.
+Found and reported 6 problems.
