@@ -1,0 +1,149 @@
+Netgen 1.5.219 compiled on Wed Feb  9 05:50:10 UTC 2022
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file /openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/results/signoff/iiitb_tlc.spice
+Reading netlist file /openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/tmp/signoff/37-powered_netlist.v
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_3.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_8.
+Creating placeholder cell definition for module sky130_ef_sc_hd__decap_12.
+Creating placeholder cell definition for module sky130_fd_sc_hd__fill_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__fill_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_6.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_4.
+Creating placeholder cell definition for module sky130_fd_sc_hd__tapvpwrvgnd_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__nor2_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__and2b_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__o21ba_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__xor2_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__and2_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__dfrtp_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__dfrtp_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_16.
+Creating placeholder cell definition for module sky130_fd_sc_hd__buf_2.
+Reading setup file /home/lokesh/openlane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Comparison output logged to file /openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/logs/signoff/40-iiitb_tlc.lef.log
+Logging to file "/openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/logs/signoff/40-iiitb_tlc.lef.log" enabled
+Circuit sky130_ef_sc_hd__decap_12 contains no devices.
+Circuit sky130_fd_sc_hd__fill_1 contains no devices.
+Circuit sky130_fd_sc_hd__fill_2 contains no devices.
+Circuit sky130_fd_sc_hd__buf_2 contains no devices.
+Circuit sky130_fd_sc_hd__decap_3 contains no devices.
+Circuit sky130_fd_sc_hd__decap_4 contains no devices.
+Circuit sky130_fd_sc_hd__decap_8 contains no devices.
+Circuit sky130_fd_sc_hd__o21ba_1 contains no devices.
+Circuit sky130_fd_sc_hd__clkbuf_1 contains no devices.
+Circuit sky130_fd_sc_hd__clkbuf_16 contains no devices.
+Circuit sky130_fd_sc_hd__and2b_1 contains no devices.
+Circuit sky130_fd_sc_hd__nor2_1 contains no devices.
+Circuit sky130_fd_sc_hd__clkbuf_2 contains no devices.
+Circuit sky130_fd_sc_hd__decap_6 contains no devices.
+Circuit sky130_fd_sc_hd__tapvpwrvgnd_1 contains no devices.
+Circuit sky130_fd_sc_hd__dfrtp_1 contains no devices.
+Circuit sky130_fd_sc_hd__dfrtp_2 contains no devices.
+Circuit sky130_fd_sc_hd__and2_1 contains no devices.
+Circuit sky130_fd_sc_hd__xor2_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'iiitb_tlc'
+Circuit iiitb_tlc contains 302 device instances.
+  Class: sky130_fd_sc_hd__clkbuf_16 instances:   3
+  Class: sky130_fd_sc_hd__buf_2 instances:   5
+  Class: sky130_fd_sc_hd__xor2_1 instances:   1
+  Class: sky130_ef_sc_hd__decap_12 instances: 108
+  Class: sky130_fd_sc_hd__dfrtp_1 instances:   1
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:   1
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:   7
+  Class: sky130_fd_sc_hd__clkbuf_2 instances:   1
+  Class: sky130_fd_sc_hd__o21ba_1 instances:   1
+  Class: sky130_fd_sc_hd__and2b_1 instances:   2
+  Class: sky130_fd_sc_hd__decap_3 instances:  54
+  Class: sky130_fd_sc_hd__decap_4 instances:  15
+  Class: sky130_fd_sc_hd__decap_6 instances:  11
+  Class: sky130_fd_sc_hd__decap_8 instances:  19
+  Class: sky130_fd_sc_hd__and2_1 instances:   1
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances:  30
+  Class: sky130_fd_sc_hd__fill_1 instances:  31
+  Class: sky130_fd_sc_hd__fill_2 instances:  10
+  Class: sky130_fd_sc_hd__nor2_1 instances:   1
+Circuit contains 29 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'iiitb_tlc'
+Circuit iiitb_tlc contains 302 device instances.
+  Class: sky130_fd_sc_hd__clkbuf_16 instances:   3
+  Class: sky130_fd_sc_hd__buf_2 instances:   5
+  Class: sky130_fd_sc_hd__xor2_1 instances:   1
+  Class: sky130_ef_sc_hd__decap_12 instances: 108
+  Class: sky130_fd_sc_hd__dfrtp_1 instances:   1
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:   1
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:   7
+  Class: sky130_fd_sc_hd__clkbuf_2 instances:   1
+  Class: sky130_fd_sc_hd__o21ba_1 instances:   1
+  Class: sky130_fd_sc_hd__and2b_1 instances:   2
+  Class: sky130_fd_sc_hd__decap_3 instances:  54
+  Class: sky130_fd_sc_hd__decap_4 instances:  15
+  Class: sky130_fd_sc_hd__decap_6 instances:  11
+  Class: sky130_fd_sc_hd__decap_8 instances:  19
+  Class: sky130_fd_sc_hd__and2_1 instances:   1
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances:  30
+  Class: sky130_fd_sc_hd__fill_1 instances:  31
+  Class: sky130_fd_sc_hd__fill_2 instances:  10
+  Class: sky130_fd_sc_hd__nor2_1 instances:   1
+Circuit contains 29 nets, and 1 disconnected pin.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'iiitb_tlc'
+Circuit iiitb_tlc contains 32 device instances.
+  Class: sky130_fd_sc_hd__clkbuf_16 instances:   3
+  Class: sky130_fd_sc_hd__buf_2 instances:   5
+  Class: sky130_fd_sc_hd__xor2_1 instances:   1
+  Class: sky130_ef_sc_hd__decap_12 instances:   1
+  Class: sky130_fd_sc_hd__dfrtp_1 instances:   1
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:   1
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:   7
+  Class: sky130_fd_sc_hd__clkbuf_2 instances:   1
+  Class: sky130_fd_sc_hd__o21ba_1 instances:   1
+  Class: sky130_fd_sc_hd__and2b_1 instances:   2
+  Class: sky130_fd_sc_hd__decap_3 instances:   1
+  Class: sky130_fd_sc_hd__decap_4 instances:   1
+  Class: sky130_fd_sc_hd__decap_6 instances:   1
+  Class: sky130_fd_sc_hd__decap_8 instances:   1
+  Class: sky130_fd_sc_hd__and2_1 instances:   1
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_2 instances:   1
+  Class: sky130_fd_sc_hd__nor2_1 instances:   1
+Circuit contains 29 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'iiitb_tlc'
+Circuit iiitb_tlc contains 32 device instances.
+  Class: sky130_fd_sc_hd__clkbuf_16 instances:   3
+  Class: sky130_fd_sc_hd__buf_2 instances:   5
+  Class: sky130_fd_sc_hd__xor2_1 instances:   1
+  Class: sky130_ef_sc_hd__decap_12 instances:   1
+  Class: sky130_fd_sc_hd__dfrtp_1 instances:   1
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:   1
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:   7
+  Class: sky130_fd_sc_hd__clkbuf_2 instances:   1
+  Class: sky130_fd_sc_hd__o21ba_1 instances:   1
+  Class: sky130_fd_sc_hd__and2b_1 instances:   2
+  Class: sky130_fd_sc_hd__decap_3 instances:   1
+  Class: sky130_fd_sc_hd__decap_4 instances:   1
+  Class: sky130_fd_sc_hd__decap_6 instances:   1
+  Class: sky130_fd_sc_hd__decap_8 instances:   1
+  Class: sky130_fd_sc_hd__and2_1 instances:   1
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_2 instances:   1
+  Class: sky130_fd_sc_hd__nor2_1 instances:   1
+Circuit contains 29 nets, and 1 disconnected pin.
+
+Circuit 1 contains 32 devices, Circuit 2 contains 32 devices.
+Circuit 1 contains 29 nets,    Circuit 2 contains 29 nets.
+
+Netlists match uniquely.
+Result: Circuits match uniquely.
+Logging to file "/openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/logs/signoff/40-iiitb_tlc.lef.log" disabled
+LVS Done.

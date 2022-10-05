@@ -1,0 +1,17 @@
+
+Input: /openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/results/routing/iiitb_tlc.def
+Output: /openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/results/signoff/iiitb_tlc.klayout.gds
+Design: iiitb_tlc
+Technology File: /home/lokesh/openlane/pdks/sky130A/libs.tech/klayout/tech/sky130A.lyt
+GDS File List: ['/home/lokesh/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds']
+LEF File: /openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/tmp/merged.nom.lef
+
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/home/lokesh/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+[INFO] Copying toplevel cell 'iiitb_tlc'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/openlane/designs/iiitb_tlc/runs/RUN_2022.09.05_09.47.48/results/signoff/iiitb_tlc.klayout.gds'
+[INFO] Done.
